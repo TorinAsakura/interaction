@@ -1,0 +1,10 @@
+use crate::PokerBros;
+use jni_sys::*;
+
+// ANCHOR: api
+foreign_class!(class PokerBros {
+    self_type PokerBros;
+    constructor PokerBros::new() -> PokerBros;
+    fn PokerBros::login(username: &str, password: &str) -> String;
+});
+// ANCHOR_END: api
