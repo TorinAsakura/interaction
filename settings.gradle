@@ -1,0 +1,2 @@
+rootProject.name = "Interaction"
+include ':app'
