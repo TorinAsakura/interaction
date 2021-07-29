@@ -1,4 +1,4 @@
-package com.atls.aeterna;
+package com.atls.aeterna.interaction;
 
 import android.app.Service;
 import android.content.Context;
@@ -61,10 +61,10 @@ public class OverlayService extends Service implements OnTouchListener, OnClickL
         m_overlayedButton.setOnClickListener(this);
 
         WindowManager.LayoutParams params = new WindowManager.LayoutParams(
-            WindowManager.LayoutParams.WRAP_CONTENT,
-            WindowManager.LayoutParams.WRAP_CONTENT,
-            LAYOUT_FLAG, WINDOW_FLAGS,
-            PixelFormat.TRANSLUCENT
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                LAYOUT_FLAG, WINDOW_FLAGS,
+                PixelFormat.TRANSLUCENT
         );
 
         params.gravity = Gravity.LEFT | Gravity.TOP;
@@ -75,10 +75,10 @@ public class OverlayService extends Service implements OnTouchListener, OnClickL
         m_topLeftView = new View(this);
 
         WindowManager.LayoutParams topLeftParams = new WindowManager.LayoutParams(
-            WindowManager.LayoutParams.WRAP_CONTENT,
-            WindowManager.LayoutParams.WRAP_CONTENT,
-            LAYOUT_FLAG, WINDOW_FLAGS,
-            PixelFormat.TRANSLUCENT
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                WindowManager.LayoutParams.WRAP_CONTENT,
+                LAYOUT_FLAG, WINDOW_FLAGS,
+                PixelFormat.TRANSLUCENT
         );
 
         topLeftParams.gravity = Gravity.LEFT | Gravity.TOP;

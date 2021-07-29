@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.atls.aeterna">
+    package="com.atls.aeterna.interaction">
 
     <application
         android:allowBackup="true"
@@ -18,7 +18,7 @@
         </activity>
 
         <service
-            android:name="com.atls.aeterna.OverlayService"
+            android:name="com.atls.aeterna.interaction.OverlayService"
             android:exported="false" />
     </application>
 

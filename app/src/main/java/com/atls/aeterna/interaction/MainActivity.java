@@ -1,4 +1,4 @@
-package com.atls.aeterna;
+package com.atls.aeterna.interaction;
 
 import androidx.appcompat.app.AppCompatActivity;
 
