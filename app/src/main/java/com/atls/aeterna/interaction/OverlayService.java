@@ -27,6 +27,7 @@ public class OverlayService extends Service implements OnTouchListener, OnClickL
     private int m_originalYPos;
     private boolean m_isMoving;
     private WindowManager m_wm;
+    private static final String TAG = "interaction/ovrsvc";
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -36,6 +37,7 @@ public class OverlayService extends Service implements OnTouchListener, OnClickL
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.i(TAG, "onCreate");
 
         int WINDOW_FLAGS = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE |
                 WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL;
