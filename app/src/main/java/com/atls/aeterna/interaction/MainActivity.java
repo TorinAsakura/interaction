@@ -29,8 +29,13 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "onCreate");
         setContentView(R.layout.activity_main);
         checkPermissionOverlay();
-        Intent svc = new Intent(this, OverlayService.class);
-        startService(svc);
-        finish();
+
+        Intent overlaySvc = new Intent(this, OverlayService.class);
+        Intent webSvc = new Intent(this, WebService.class);
+
+        startService(overlaySvc);
+        startService(webSvc);
+
+        //finish();
     }
 }
